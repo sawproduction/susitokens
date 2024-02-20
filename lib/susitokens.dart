@@ -17,11 +17,12 @@ List tokens = [];
 List? pcdefault;
 List? pcext;
 
-void loadTokens() async {
+Future loadTokens() async {
   pcdefault = await _loadJsonFromAssets('assets/pancakeswap-default.json');
   pcext = await _loadJsonFromAssets('assets/pancakeswap-extended.json');
  pcdefault!.forEach((element) {tokens.add(element);});
  pcext!.forEach((element) {tokens.add(element);});
+ return tokens;
 }
 }
 
