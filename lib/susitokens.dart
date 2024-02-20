@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 
 class SusiTokens{
-    // Constructor to accept a callback function
-  SusiTokens({Function()? onTokensLoaded}) : _onTokensLoaded = onTokensLoaded;
 // Load JSON file from assets
 Future _loadJsonFromAssets(String path) async {
   final jsonString = await rootBundle.loadString(path);
@@ -24,7 +22,6 @@ Future loadTokens() async {
   pcext = await _loadJsonFromAssets('packages/susitokens/assets/pancakeswap-extended.json');
  pcdefault!.forEach((element) {tokens.add(element);});
  pcext!.forEach((element) {tokens.add(element);});
-   _onTokensLoaded?.call();
  return tokens;
 }
 }
