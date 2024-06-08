@@ -3262,5 +3262,13 @@
     "chainId": 56,
     "decimals": 18,
     "logoURI": "https://tokens.pancakeswap.finance/images/0x0203D275D2A65030889aF45ed91D472be3948B92.png"
+  },
+  {
+    "name": "Judgment AI",
+    "symbol": "JMTAI",
+    "address": "0x56A1EeC9494AD59a1954616Cb38715dc4aA61960",
+    "chainId": 56,
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/35042/thumb/IMG_6025.jpeg_2.png?1707193069"
   }
 ]
